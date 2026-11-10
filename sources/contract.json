@@ -1,0 +1,10 @@
+{
+  "GET /documents": "文档id、修订与有序链接",
+  "GET /doc/D1/r{n}/p{n}": "保留单元格与继承标记的HTML",
+  "phases": [
+    "base",
+    "revised",
+    "partial"
+  ],
+  "cell_reference": "页码、table-id与原始DOM行列坐标，序号从1开始"
+}

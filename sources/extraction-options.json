@@ -1,0 +1,9 @@
+{
+  "maximum_floor_span": 12,
+  "required_fields": [
+    "building",
+    "floor",
+    "participants",
+    "assembly_point"
+  ]
+}
