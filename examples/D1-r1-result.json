@@ -1,0 +1,1043 @@
+{
+  "schema_version": "1.0",
+  "document": {
+    "doc_id": "D1",
+    "revision": "1",
+    "publishable": true,
+    "collection_complete": true,
+    "version_consistent": true,
+    "page_order_valid": true,
+    "version_errors": [],
+    "pages": [
+      {
+        "page": 1,
+        "url": "sources/r1-p1.html",
+        "sha256": "556324c5e247578e394e25f81245a25740ec066e29f2f5d09fa4cde6c9bbdb7b",
+        "doc_id": "D1",
+        "revision": "1",
+        "data_page": "1",
+        "tables": [
+          {
+            "table_id": "routes",
+            "data_continue": false,
+            "rows": 4,
+            "header_rows": [
+              1,
+              2
+            ],
+            "data_rows": [
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "page": 2,
+        "url": "sources/r1-p2.html",
+        "sha256": "7c94e94259888911522808e5dc97c47ba50f594c36a218dbf675073079ab5e69",
+        "doc_id": "D1",
+        "revision": "1",
+        "data_page": "2",
+        "tables": [
+          {
+            "table_id": "routes",
+            "data_continue": true,
+            "rows": 2,
+            "header_rows": [
+              1
+            ],
+            "data_rows": [
+              2
+            ]
+          },
+          {
+            "table_id": "office",
+            "data_continue": false,
+            "rows": 2,
+            "header_rows": [
+              1
+            ],
+            "data_rows": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "maximum_floor_span": 12,
+    "required_fields": [
+      "building",
+      "floor",
+      "participants",
+      "assembly_point"
+    ]
+  },
+  "records": [
+    {
+      "record_id": "D1-r1-routes-p1-row3-1F",
+      "source_row_key": "D1|r1|routes|p1|row3",
+      "doc_id": "D1",
+      "revision": "1",
+      "table_id": "routes",
+      "building": "商场甲",
+      "floor": "1F",
+      "floor_level": 1,
+      "participants": 200,
+      "participants_unit": "人",
+      "assembly_point": "东广场",
+      "participants_scope": "row_record",
+      "quantity": {
+        "status": "exact",
+        "unit_source": "header",
+        "participants_people": 200,
+        "detail": {
+          "raw": "二",
+          "amount": 2,
+          "factor": 100,
+          "explicit_cell_unit": null,
+          "header_unit": "hundred"
+        }
+      },
+      "floor_span": {
+        "raw": "1-3F",
+        "status": "ok",
+        "is_range": true,
+        "span": 3,
+        "levels": [
+          "1F",
+          "2F",
+          "3F"
+        ]
+      },
+      "shared_row_evidence": true,
+      "evidence": {
+        "page": 1,
+        "page_url": "sources/r1-p1.html",
+        "page_sha256": "556324c5e247578e394e25f81245a25740ec066e29f2f5d09fa4cde6c9bbdb7b",
+        "table_id": "routes",
+        "row": 3,
+        "fields": {
+          "building": {
+            "value": "商场甲",
+            "logical_row": 3,
+            "logical_column": 1,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 3,
+              "col": 1,
+              "text": "商场甲",
+              "raw_text": "商场甲",
+              "html": "<td rowspan=\"2\">商场甲</td>",
+              "rowspan": 2,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "floor": {
+            "value": "1-3F",
+            "logical_row": 3,
+            "logical_column": 2,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 3,
+              "col": 2,
+              "text": "1-3F",
+              "raw_text": "1-3F",
+              "html": "<td>1-3F</td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "participants": {
+            "value": "二",
+            "logical_row": 3,
+            "logical_column": 3,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 3,
+              "col": 3,
+              "text": "二",
+              "raw_text": "二",
+              "html": "<td>二</td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "assembly_point": {
+            "value": "东广场",
+            "logical_row": 3,
+            "logical_column": 4,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 3,
+              "col": 4,
+              "text": "东广场",
+              "raw_text": "东广场1",
+              "html": "<td>东广场<sup data-ref=\"f1\">1</sup></td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          }
+        },
+        "row_raw_text": "商场甲 | 1-3F | 二 | 东广场1",
+        "header_paths": {
+          "1": "楼栋",
+          "2": "楼层",
+          "3": "疏散安排 / 人数（百人）",
+          "4": "疏散安排 / 集合点"
+        },
+        "continuation_chain": [
+          {
+            "page": 1,
+            "table_id": "routes",
+            "data_continue": false
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "ref": "f1",
+          "marker": "1",
+          "text": "雨天改室内连廊",
+          "source": {
+            "page": 1,
+            "table_id": "routes",
+            "row": 3,
+            "col": 4,
+            "text": "东广场",
+            "raw_text": "东广场1",
+            "html": "<td>东广场<sup data-ref=\"f1\">1</sup></td>",
+            "rowspan": 1,
+            "colspan": 1
+          },
+          "aside_html": "<aside id=\"f1\">雨天改室内连廊</aside>"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "record_id": "D1-r1-routes-p1-row3-2F",
+      "source_row_key": "D1|r1|routes|p1|row3",
+      "doc_id": "D1",
+      "revision": "1",
+      "table_id": "routes",
+      "building": "商场甲",
+      "floor": "2F",
+      "floor_level": 2,
+      "participants": 200,
+      "participants_unit": "人",
+      "assembly_point": "东广场",
+      "participants_scope": "row_record",
+      "quantity": {
+        "status": "exact",
+        "unit_source": "header",
+        "participants_people": 200,
+        "detail": {
+          "raw": "二",
+          "amount": 2,
+          "factor": 100,
+          "explicit_cell_unit": null,
+          "header_unit": "hundred"
+        }
+      },
+      "floor_span": {
+        "raw": "1-3F",
+        "status": "ok",
+        "is_range": true,
+        "span": 3,
+        "levels": [
+          "1F",
+          "2F",
+          "3F"
+        ]
+      },
+      "shared_row_evidence": true,
+      "evidence": {
+        "page": 1,
+        "page_url": "sources/r1-p1.html",
+        "page_sha256": "556324c5e247578e394e25f81245a25740ec066e29f2f5d09fa4cde6c9bbdb7b",
+        "table_id": "routes",
+        "row": 3,
+        "fields": {
+          "building": {
+            "value": "商场甲",
+            "logical_row": 3,
+            "logical_column": 1,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 3,
+              "col": 1,
+              "text": "商场甲",
+              "raw_text": "商场甲",
+              "html": "<td rowspan=\"2\">商场甲</td>",
+              "rowspan": 2,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "floor": {
+            "value": "1-3F",
+            "logical_row": 3,
+            "logical_column": 2,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 3,
+              "col": 2,
+              "text": "1-3F",
+              "raw_text": "1-3F",
+              "html": "<td>1-3F</td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "participants": {
+            "value": "二",
+            "logical_row": 3,
+            "logical_column": 3,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 3,
+              "col": 3,
+              "text": "二",
+              "raw_text": "二",
+              "html": "<td>二</td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "assembly_point": {
+            "value": "东广场",
+            "logical_row": 3,
+            "logical_column": 4,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 3,
+              "col": 4,
+              "text": "东广场",
+              "raw_text": "东广场1",
+              "html": "<td>东广场<sup data-ref=\"f1\">1</sup></td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          }
+        },
+        "row_raw_text": "商场甲 | 1-3F | 二 | 东广场1",
+        "header_paths": {
+          "1": "楼栋",
+          "2": "楼层",
+          "3": "疏散安排 / 人数（百人）",
+          "4": "疏散安排 / 集合点"
+        },
+        "continuation_chain": [
+          {
+            "page": 1,
+            "table_id": "routes",
+            "data_continue": false
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "ref": "f1",
+          "marker": "1",
+          "text": "雨天改室内连廊",
+          "source": {
+            "page": 1,
+            "table_id": "routes",
+            "row": 3,
+            "col": 4,
+            "text": "东广场",
+            "raw_text": "东广场1",
+            "html": "<td>东广场<sup data-ref=\"f1\">1</sup></td>",
+            "rowspan": 1,
+            "colspan": 1
+          },
+          "aside_html": "<aside id=\"f1\">雨天改室内连廊</aside>"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "record_id": "D1-r1-routes-p1-row3-3F",
+      "source_row_key": "D1|r1|routes|p1|row3",
+      "doc_id": "D1",
+      "revision": "1",
+      "table_id": "routes",
+      "building": "商场甲",
+      "floor": "3F",
+      "floor_level": 3,
+      "participants": 200,
+      "participants_unit": "人",
+      "assembly_point": "东广场",
+      "participants_scope": "row_record",
+      "quantity": {
+        "status": "exact",
+        "unit_source": "header",
+        "participants_people": 200,
+        "detail": {
+          "raw": "二",
+          "amount": 2,
+          "factor": 100,
+          "explicit_cell_unit": null,
+          "header_unit": "hundred"
+        }
+      },
+      "floor_span": {
+        "raw": "1-3F",
+        "status": "ok",
+        "is_range": true,
+        "span": 3,
+        "levels": [
+          "1F",
+          "2F",
+          "3F"
+        ]
+      },
+      "shared_row_evidence": true,
+      "evidence": {
+        "page": 1,
+        "page_url": "sources/r1-p1.html",
+        "page_sha256": "556324c5e247578e394e25f81245a25740ec066e29f2f5d09fa4cde6c9bbdb7b",
+        "table_id": "routes",
+        "row": 3,
+        "fields": {
+          "building": {
+            "value": "商场甲",
+            "logical_row": 3,
+            "logical_column": 1,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 3,
+              "col": 1,
+              "text": "商场甲",
+              "raw_text": "商场甲",
+              "html": "<td rowspan=\"2\">商场甲</td>",
+              "rowspan": 2,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "floor": {
+            "value": "1-3F",
+            "logical_row": 3,
+            "logical_column": 2,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 3,
+              "col": 2,
+              "text": "1-3F",
+              "raw_text": "1-3F",
+              "html": "<td>1-3F</td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "participants": {
+            "value": "二",
+            "logical_row": 3,
+            "logical_column": 3,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 3,
+              "col": 3,
+              "text": "二",
+              "raw_text": "二",
+              "html": "<td>二</td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "assembly_point": {
+            "value": "东广场",
+            "logical_row": 3,
+            "logical_column": 4,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 3,
+              "col": 4,
+              "text": "东广场",
+              "raw_text": "东广场1",
+              "html": "<td>东广场<sup data-ref=\"f1\">1</sup></td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          }
+        },
+        "row_raw_text": "商场甲 | 1-3F | 二 | 东广场1",
+        "header_paths": {
+          "1": "楼栋",
+          "2": "楼层",
+          "3": "疏散安排 / 人数（百人）",
+          "4": "疏散安排 / 集合点"
+        },
+        "continuation_chain": [
+          {
+            "page": 1,
+            "table_id": "routes",
+            "data_continue": false
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "ref": "f1",
+          "marker": "1",
+          "text": "雨天改室内连廊",
+          "source": {
+            "page": 1,
+            "table_id": "routes",
+            "row": 3,
+            "col": 4,
+            "text": "东广场",
+            "raw_text": "东广场1",
+            "html": "<td>东广场<sup data-ref=\"f1\">1</sup></td>",
+            "rowspan": 1,
+            "colspan": 1
+          },
+          "aside_html": "<aside id=\"f1\">雨天改室内连廊</aside>"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "record_id": "D1-r1-routes-p1-row4-B2",
+      "source_row_key": "D1|r1|routes|p1|row4",
+      "doc_id": "D1",
+      "revision": "1",
+      "table_id": "routes",
+      "building": "商场甲",
+      "floor": "B2",
+      "floor_level": -2,
+      "participants": 30,
+      "participants_unit": "人",
+      "assembly_point": "南门",
+      "participants_scope": "row_record",
+      "quantity": {
+        "status": "exact",
+        "unit_source": "cell",
+        "participants_people": 30,
+        "detail": {
+          "raw": "30人",
+          "amount": 30,
+          "factor": 1,
+          "explicit_cell_unit": "人",
+          "header_unit": "hundred"
+        }
+      },
+      "floor_span": {
+        "raw": "B2-B1",
+        "status": "ok",
+        "is_range": true,
+        "span": 2,
+        "levels": [
+          "B2",
+          "B1"
+        ]
+      },
+      "shared_row_evidence": true,
+      "evidence": {
+        "page": 1,
+        "page_url": "sources/r1-p1.html",
+        "page_sha256": "556324c5e247578e394e25f81245a25740ec066e29f2f5d09fa4cde6c9bbdb7b",
+        "table_id": "routes",
+        "row": 4,
+        "fields": {
+          "building": {
+            "value": "商场甲",
+            "logical_row": 4,
+            "logical_column": 1,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 3,
+              "col": 1,
+              "text": "商场甲",
+              "raw_text": "商场甲",
+              "html": "<td rowspan=\"2\">商场甲</td>",
+              "rowspan": 2,
+              "colspan": 1
+            },
+            "via_rowspan": true
+          },
+          "floor": {
+            "value": "B2-B1",
+            "logical_row": 4,
+            "logical_column": 2,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 4,
+              "col": 2,
+              "text": "B2-B1",
+              "raw_text": "B2-B1",
+              "html": "<td>B2-B1</td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "participants": {
+            "value": "30人",
+            "logical_row": 4,
+            "logical_column": 3,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 4,
+              "col": 3,
+              "text": "30人",
+              "raw_text": "30人",
+              "html": "<td>30人</td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "assembly_point": {
+            "value": "南门",
+            "logical_row": 4,
+            "logical_column": 4,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 4,
+              "col": 4,
+              "text": "南门",
+              "raw_text": "南门",
+              "html": "<td>南门<table><tr><td>备注</td><td>人工引导</td></tr></table></td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          }
+        },
+        "row_raw_text": "B2-B1 | 30人 | 南门",
+        "header_paths": {
+          "1": "楼栋",
+          "2": "楼层",
+          "3": "疏散安排 / 人数（百人）",
+          "4": "疏散安排 / 集合点"
+        },
+        "continuation_chain": [
+          {
+            "page": 1,
+            "table_id": "routes",
+            "data_continue": false
+          }
+        ]
+      },
+      "footnotes": [],
+      "notes": [
+        {
+          "kind": "nested_remark_table",
+          "page": 1,
+          "table_id": "routes",
+          "row": 4,
+          "col": 4,
+          "rows": [
+            [
+              "备注",
+              "人工引导"
+            ]
+          ],
+          "html": "<table><tr><td>备注</td><td>人工引导</td></tr></table>"
+        }
+      ]
+    },
+    {
+      "record_id": "D1-r1-routes-p1-row4-B1",
+      "source_row_key": "D1|r1|routes|p1|row4",
+      "doc_id": "D1",
+      "revision": "1",
+      "table_id": "routes",
+      "building": "商场甲",
+      "floor": "B1",
+      "floor_level": -1,
+      "participants": 30,
+      "participants_unit": "人",
+      "assembly_point": "南门",
+      "participants_scope": "row_record",
+      "quantity": {
+        "status": "exact",
+        "unit_source": "cell",
+        "participants_people": 30,
+        "detail": {
+          "raw": "30人",
+          "amount": 30,
+          "factor": 1,
+          "explicit_cell_unit": "人",
+          "header_unit": "hundred"
+        }
+      },
+      "floor_span": {
+        "raw": "B2-B1",
+        "status": "ok",
+        "is_range": true,
+        "span": 2,
+        "levels": [
+          "B2",
+          "B1"
+        ]
+      },
+      "shared_row_evidence": true,
+      "evidence": {
+        "page": 1,
+        "page_url": "sources/r1-p1.html",
+        "page_sha256": "556324c5e247578e394e25f81245a25740ec066e29f2f5d09fa4cde6c9bbdb7b",
+        "table_id": "routes",
+        "row": 4,
+        "fields": {
+          "building": {
+            "value": "商场甲",
+            "logical_row": 4,
+            "logical_column": 1,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 3,
+              "col": 1,
+              "text": "商场甲",
+              "raw_text": "商场甲",
+              "html": "<td rowspan=\"2\">商场甲</td>",
+              "rowspan": 2,
+              "colspan": 1
+            },
+            "via_rowspan": true
+          },
+          "floor": {
+            "value": "B2-B1",
+            "logical_row": 4,
+            "logical_column": 2,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 4,
+              "col": 2,
+              "text": "B2-B1",
+              "raw_text": "B2-B1",
+              "html": "<td>B2-B1</td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "participants": {
+            "value": "30人",
+            "logical_row": 4,
+            "logical_column": 3,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 4,
+              "col": 3,
+              "text": "30人",
+              "raw_text": "30人",
+              "html": "<td>30人</td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "assembly_point": {
+            "value": "南门",
+            "logical_row": 4,
+            "logical_column": 4,
+            "cell": {
+              "page": 1,
+              "table_id": "routes",
+              "row": 4,
+              "col": 4,
+              "text": "南门",
+              "raw_text": "南门",
+              "html": "<td>南门<table><tr><td>备注</td><td>人工引导</td></tr></table></td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          }
+        },
+        "row_raw_text": "B2-B1 | 30人 | 南门",
+        "header_paths": {
+          "1": "楼栋",
+          "2": "楼层",
+          "3": "疏散安排 / 人数（百人）",
+          "4": "疏散安排 / 集合点"
+        },
+        "continuation_chain": [
+          {
+            "page": 1,
+            "table_id": "routes",
+            "data_continue": false
+          }
+        ]
+      },
+      "footnotes": [],
+      "notes": [
+        {
+          "kind": "nested_remark_table",
+          "page": 1,
+          "table_id": "routes",
+          "row": 4,
+          "col": 4,
+          "rows": [
+            [
+              "备注",
+              "人工引导"
+            ]
+          ],
+          "html": "<table><tr><td>备注</td><td>人工引导</td></tr></table>"
+        }
+      ]
+    },
+    {
+      "record_id": "D1-r1-office-p2-row2-2F",
+      "source_row_key": "D1|r1|office|p2|row2",
+      "doc_id": "D1",
+      "revision": "1",
+      "table_id": "office",
+      "building": "办公乙",
+      "floor": "2F",
+      "floor_level": 2,
+      "participants": 15,
+      "participants_unit": "人",
+      "assembly_point": "西广场",
+      "participants_scope": "row_record",
+      "quantity": {
+        "status": "exact",
+        "unit_source": "header",
+        "participants_people": 15,
+        "detail": {
+          "raw": "15",
+          "amount": 15,
+          "factor": 1,
+          "explicit_cell_unit": null,
+          "header_unit": "person"
+        }
+      },
+      "floor_span": null,
+      "shared_row_evidence": false,
+      "evidence": {
+        "page": 2,
+        "page_url": "sources/r1-p2.html",
+        "page_sha256": "7c94e94259888911522808e5dc97c47ba50f594c36a218dbf675073079ab5e69",
+        "table_id": "office",
+        "row": 2,
+        "fields": {
+          "building": {
+            "value": "办公乙",
+            "logical_row": 2,
+            "logical_column": 1,
+            "cell": {
+              "page": 2,
+              "table_id": "office",
+              "row": 2,
+              "col": 1,
+              "text": "办公乙",
+              "raw_text": "办公乙",
+              "html": "<td>办公乙</td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "floor": {
+            "value": "2F",
+            "logical_row": 2,
+            "logical_column": 2,
+            "cell": {
+              "page": 2,
+              "table_id": "office",
+              "row": 2,
+              "col": 2,
+              "text": "2F",
+              "raw_text": "2F",
+              "html": "<td>2F</td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "participants": {
+            "value": "15",
+            "logical_row": 2,
+            "logical_column": 3,
+            "cell": {
+              "page": 2,
+              "table_id": "office",
+              "row": 2,
+              "col": 3,
+              "text": "15",
+              "raw_text": "15",
+              "html": "<td>15</td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          },
+          "assembly_point": {
+            "value": "西广场",
+            "logical_row": 2,
+            "logical_column": 4,
+            "cell": {
+              "page": 2,
+              "table_id": "office",
+              "row": 2,
+              "col": 4,
+              "text": "西广场",
+              "raw_text": "西广场",
+              "html": "<td>西广场</td>",
+              "rowspan": 1,
+              "colspan": 1
+            },
+            "via_rowspan": false
+          }
+        },
+        "row_raw_text": "办公乙 | 2F | 15 | 西广场",
+        "header_paths": {
+          "1": "楼栋",
+          "2": "楼层",
+          "3": "人数",
+          "4": "集合点"
+        },
+        "continuation_chain": [
+          {
+            "page": 2,
+            "table_id": "office",
+            "data_continue": false
+          }
+        ]
+      },
+      "footnotes": [],
+      "notes": []
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "quantity_inexact",
+      "message": "含“约”",
+      "page": 2,
+      "table_id": "routes",
+      "row": 2,
+      "cells": [
+        {
+          "page": 2,
+          "table_id": "routes",
+          "row": 2,
+          "col": 2,
+          "text": "4F",
+          "raw_text": "4F",
+          "html": "<td>4F</td>",
+          "rowspan": 1,
+          "colspan": 1
+        },
+        {
+          "page": 2,
+          "table_id": "routes",
+          "row": 2,
+          "col": 3,
+          "text": "约三十",
+          "raw_text": "约三十",
+          "html": "<td>约三十</td>",
+          "rowspan": 1,
+          "colspan": 1
+        },
+        {
+          "page": 2,
+          "table_id": "routes",
+          "row": 2,
+          "col": 4,
+          "text": "北门",
+          "raw_text": "北门",
+          "html": "<td>北门</td>",
+          "rowspan": 1,
+          "colspan": 1
+        }
+      ],
+      "raw_text": "4F | 约三十 | 北门",
+      "quantity": {
+        "status": "inexact",
+        "unit_source": "",
+        "reason": "含“约”",
+        "detail": {
+          "raw": "约三十"
+        }
+      },
+      "context": {
+        "building": "商场甲",
+        "floor": "4F",
+        "assembly_point": "北门"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "ref": "f1",
+      "marker": "1",
+      "text": "雨天改室内连廊",
+      "source": {
+        "page": 1,
+        "table_id": "routes",
+        "row": 3,
+        "col": 4,
+        "text": "东广场",
+        "raw_text": "东广场1",
+        "html": "<td>东广场<sup data-ref=\"f1\">1</sup></td>",
+        "rowspan": 1,
+        "colspan": 1
+      },
+      "aside_html": "<aside id=\"f1\">雨天改室内连廊</aside>",
+      "row": 3,
+      "page": 1,
+      "table_id": "routes"
+    }
+  ],
+  "notes": [
+    {
+      "kind": "nested_remark_table",
+      "page": 1,
+      "table_id": "routes",
+      "row": 4,
+      "col": 4,
+      "rows": [
+        [
+          "备注",
+          "人工引导"
+        ]
+      ],
+      "html": "<table><tr><td>备注</td><td>人工引导</td></tr></table>"
+    }
+  ],
+  "statistics": {
+    "records": 6,
+    "quarantine": 1,
+    "quarantine_by_reason": {
+      "quantity_inexact": 1
+    },
+    "footnotes": 1,
+    "notes": 1
+  }
+}
